@@ -1,10 +1,9 @@
 import React from 'react';
-// import { push } from 'react-router-redux';
-// import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import Question from './Question';
+import { Link } from 'react-router-dom';
 
-const Home = (props) => (
+const Quiz = (props) => (
   <div>
     <img src="" alt="Logo Concerto" />
     <img src="" alt="Logo Concerto" />
@@ -20,6 +19,7 @@ const Home = (props) => (
       answered={question.answered}
       comment={question.comment}
      />)}
+      <Link to="/Result">Result</Link>
   </div>
 )
 const mapStateToProps = (state) => ({
@@ -27,4 +27,4 @@ const mapStateToProps = (state) => ({
   score: state.score
 })
 
-export default connect(mapStateToProps, null)(Home)
+export default connect(mapStateToProps, null)(Quiz)

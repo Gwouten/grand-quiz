@@ -6,9 +6,10 @@ import { setAnswered } from '../actions/quizFr';
 class Question extends React.Component{
     
     setScore = (e) => {
-        const selectedAnswer = e.target.value;
+        const selectedAnswer = parseInt(e.target.value, 10);
         const correctAnswer = this.props.answer;
-        if (selectedAnswer == correctAnswer) {
+        if (selectedAnswer === correctAnswer) {
+            console.log('correct');
             this.props.setScore();
         }
         this.props.setAnswered(this.props.number);
@@ -32,8 +33,6 @@ class Question extends React.Component{
                         <button value="3" onClick={this.setScore}>{props.option3}</button>
                     </div>)
                 }
-                
-                
             </div>
         )
     }

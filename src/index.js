@@ -1,8 +1,8 @@
 import React from 'react';
 import { render } from 'react-dom';
 import { Provider } from 'react-redux';
-import { ConnectedRouter } from 'react-router-redux';
-import store, { history } from './store';
+import { BrowserRouter } from 'react-router-dom';
+import store from './store';
 import App from './components/App';
 
 import './index.css';
@@ -10,11 +10,9 @@ import './index.css';
 
 const jsx =
  <Provider store={store}>
-  <ConnectedRouter history={history}>
-    <div>
+    <BrowserRouter>
       <App />
-    </div>
-  </ConnectedRouter>
+    </BrowserRouter>
 </Provider>
 
 const target = document.querySelector('#root')
