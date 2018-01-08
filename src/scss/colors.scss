@@ -1,0 +1,19 @@
+%grad-red-orange {
+    background: url(img/spiral.svg) center center no-repeat, radial-gradient(ellipse at center, #d98618 0%,#9b2222 100%);
+    background-size: cover;
+}
+
+%grad-yellow-orange {
+    background: url(img/spiral.svg) center center no-repeat, linear-gradient(135deg, #dda82b 1%,#b5722e 100%);
+    background-size: cover;
+}
+
+%grad-blue-purple {
+    background: url(img/spiral.svg) center center no-repeat, linear-gradient(135deg, #5263a9 1%,#85274b 100%);
+    background-size: cover;
+}
+
+%grad-white-blue {
+    background: url(img/spiral.svg) center center no-repeat, linear-gradient(135deg, #6a8bc6 0%,#1e376b 100%);
+    background-size: cover;
+}

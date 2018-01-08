@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 
 const Start = () => (
     <div>
-        <img src="" alt="Grand Quiz 2018" />
-        <h1>Êtes-vous le “communication expert“ de 2018 ?</h1>
+        <img className="quiz-logo" src="img/GrandQuizz2018_logo_fr.svg" alt="Grand Quiz 2018" />
+        <h1 className="">Êtes-vous le “communication expert“ de 2018 ?</h1>
         <p>Cette année, pour vous présenter nos vœux, nous avons eu envie de vous proposer un petit jeu, histoire de commencer cette nouvelle année sur une note amusante et éducative…</p>
         <p>Mais attention, ce Quizz n’a pas été établi au hasard ! 
 Il va déterminer précisément votre niveau de “communication expertise”.  
