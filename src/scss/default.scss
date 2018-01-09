@@ -11,6 +11,11 @@ html {
 }
 
 body {
-    font-family: 'Khula', sans-serif;
     box-sizing: border-box;
+    font-family: 'Khula', sans-serif;
+    line-height: 1.5;
+}
+
+.wrapper {
+    width: 100vw;
 }
