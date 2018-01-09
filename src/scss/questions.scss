@@ -1,0 +1,88 @@
+.question1, .question5, .question9, .question13 {
+    @extend %grad-blue-purple;
+}
+
+.question2, .question6, .question10, .question14 {
+    @extend %grad-red-orange;
+}
+
+.question3, .question7, .question11, .question15 {
+    @extend %grad-yellow-orange;
+}
+
+.question4, .question8, .question12 {
+    @extend %grad-white-blue;
+}
+
+.question__wrapper {
+    position: relative;
+    padding: 0 3rem;
+    text-align: center;
+    min-width: 100vw;
+    min-height: 100vh;
+}
+.question__slider {
+    position: relative;
+}
+.question__slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    z-index: -1;
+}
+.question__slide--active {
+    opacity: 1;
+    z-index: 1;
+}
+.question__unanswered {
+    display: flex;
+    flex-direction: column;
+}
+.question__content {
+    color: $white;
+    font-size: 2rem;
+    font-weight: 600;
+    width: 100%;
+}
+
+.question__answered {
+    padding-top: 7rem;
+    text-transform: uppercase;
+}
+.question__correct {
+    @extend .question__content;
+    background: url(img/correct.svg) center top no-repeat;
+    background-size: 6rem;
+}
+.question__wrong {
+    @extend .question__content;
+    background: url(img/wrong.svg) center top no-repeat;
+    background-size: 6rem;
+}
+.question__comment {
+    color: $white;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-top: 2rem;
+}
+
+.question__btn {
+    background: url(img/button__question.svg) center center no-repeat;
+    background-size: contain;
+    border: none;
+    color: $black;
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    margin-left: -1rem;
+    margin-bottom: 0;
+    padding: 2.5rem 1.5rem 2.5rem 4rem;
+    width: 100%;
+}
+
+
+
+.score {
+    display: none;
+    position: absolute;
+}

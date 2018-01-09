@@ -1,0 +1,21 @@
+%logo {
+    height: 80%;
+}
+
+.logo__wrapper {
+    align-items: center;
+    display: flex;
+    height: 10rem;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    padding: 0 2rem;
+    width: 100%;
+}
+
+.concerto-logo {
+    @extend %logo;
+}
+
+.quiz-logo {
+    @extend %logo;
+}
