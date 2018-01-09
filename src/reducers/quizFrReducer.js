@@ -1,7 +1,7 @@
 export const quizFr = [
     {
         questionNumber: 1,
-        questionContent: "2017 s’est achevé sur l’abandon officiel d’une technologie qui a rendu bien des services. De laquelle s’agit-il ?",
+        questionContent: "2017 s’est achevé sur l’abandon officiel d’une technologie qui a rendu bien des services. De laquelle s’agit-il&thinsp;?",
         questionAnswer: 2,
         option1: "Le fax",
         option2: "Le télégramme",
@@ -11,47 +11,47 @@ export const quizFr = [
         correct: false
     },{
         questionNumber: 2,
-        questionContent: "Google est tellement dominant que le verbe « googler » est devenu une expression usuelle. Connaissez-vous l’origine du mot Google ?",
+        questionContent: "Google est tellement dominant que le verbe « googler » est devenu une expression usuelle. Connaissez-vous l’origine du mot Google&thinsp;?",
         questionAnswer: 1,
         option1: "10 à la puissance  100",
         option2: "« chasse au trésor » en tahitien",
         option3: "« chercher » en araméen",
         answered: false,
-        comment: "Google est une déformation phonétique de « googol » (gogol en français), qui désigne le nombre 10 exposant 100, soit 1 suivi de 100 zéros. Un gogolplex égale 10 à la puissance gogol: un nombre si grand qu’il serait impossible de l’écrire, car il contient plus de chiffres qu’il n’y a d’atomes dans l’univers. Mais peut-être avez-vous googlé la question?",
+        comment: "Google est une déformation phonétique de « googol » (gogol en français), qui désigne le nombre 10 exposant 100, soit 1 suivi de 100 zéros. Un gogolplex égale 10 à la puissance gogol: un nombre si grand qu’il serait impossible de l’écrire, car il contient plus de chiffres qu’il n’y a d’atomes dans l’univers. Mais peut-être avez-vous googlé la question&thinsp;?",
         correct: false
     },{
         questionNumber: 3,
-        questionContent: "Lequel de ces logos a été le logo officiel d’Apple ?",
+        questionContent: "Lequel de ces logos a été le logo officiel d’Apple&thinsp;?",
         questionAnswer: 1,
-        option1: "Le fax",
-        option2: "Le télégramme",
-        option3: "Le teletext",
+        option1: "<img src='../img/apple1.jpg' alt='Old pendrawing of Isaac Newton sitting under a tree' />",
+        option2: "<img src='../img/apple2.svg' alt='The profile of an apple in colored layer' />",
+        option3: "<img src='../img/apple3.svg' alt='The profile of an apple in black' />",
         answered: false,
         comment: "Dans le logo coloré, les couleurs sont correctes, mais pas disposées dans le bon ordre. Le logo noir a sa feuille du mauvais côté. Seule la gravure de Newton est correcte, premier logo de la marque, en 1976.",
         correct: false
     },{
         questionNumber: 4,
-        questionContent: "Dans un classement mondial de popularité des réseaux sociaux (basé sur le nombre d’utilisateurs actifs), quelle était la position de Linkedin en 2017 ?",
+        questionContent: "Dans un classement mondial de popularité des réseaux sociaux (basé sur le nombre d’utilisateurs actifs), quelle était la position de Linkedin en 2017&thinsp;?",
         questionAnswer: 3,
         option1: "5<sup>e</sup> place",
         option2: "8<sup>e</sup> place",
         option3: "18<sup>e</sup> place",
         answered: false,
-        comment: "LinkedIn, avec 106 millions d’utilisateurs actifs en 2017, se classe à la 18e position. Facebook est grand premier avec près de 2 milliards d’utilisateurs. <span>(source : smart insights)</span>",
+        comment: "LinkedIn, avec 106 millions d’utilisateurs actifs en 2017, se classe à la 18<sup>e</sup> position. Facebook est grand premier avec près de 2&nbsp;milliards d’utilisateurs.<br/><span class='source'>(source&thinsp;: smart insights)</span>",
         correct: false
     },{
         questionNumber: 5,
-        questionContent: "Réseaux sociaux : quel segment de la population constitue le levier de croissance depuis 2013 ?",
+        questionContent: "Réseaux sociaux&thinsp;: quel segment de la population constitue le levier de croissance depuis 2013&thinsp;?",
         questionAnswer: 3,
         option1: "10-29 ans",
         option2: "30-59 ans",
         option3: "Plus de 65 ans",
         answered: false,
-        comment: "Depuis 2013, toutes les tranches d’âge ont atteint un plateau sauf les 65 + qui continuent de progresser. <span>(source : smart insights)</span>",
+        comment: "Depuis 2013, toutes les tranches d’âge ont atteint un plateau sauf les 65+ qui continuent de progresser.<br/><span class='source'>(source&thinsp;: smart insights)</span>",
         correct: false
     },{
         questionNumber: 6,
-        questionContent: "En média planning, on parle traditionnellement de GRP pour évaluer les performances de campagnes. Mais savez-vous ce que désignent ces trois lettres ? ",
+        questionContent: "En média planning, on parle traditionnellement de GRP pour évaluer les performances de campagnes. Mais savez-vous ce que désignent ces trois lettres&thinsp;? ",
         questionAnswer: 1,
         option1: "Gross Rating Point",
         option2: "Global Return Performance",
@@ -61,7 +61,7 @@ export const quizFr = [
         correct: false
     },{
         questionNumber: 7,
-        questionContent: "Le mot “ordinateur” a été créé en 1955 à la demande d’IBM pour définir ses nouveaux produits. Plusieurs autres noms furent envisagés. Laquelle des propositions suivantes n’a PAS été soumise ? ",
+        questionContent: "Le mot “ordinateur” a été créé en 1955 à la demande d’IBM pour définir ses nouveaux produits. Plusieurs autres noms furent envisagés. Laquelle des propositions suivantes n’a PAS été soumise&thinsp;?",
         questionAnswer: 1,
         option1: "Ordinatrice",
         option2: "Systémateur",
@@ -71,13 +71,13 @@ export const quizFr = [
         correct: false
     },{
         questionNumber: 8,
-        questionContent: "On parle beaucoup du concept de 'funnel' pour évoquer les parcours d’achat sur internet. D’où vient ce vocable ?",
+        questionContent: "On parle beaucoup du concept de 'funnel' pour évoquer les parcours d’achat sur internet. D’où vient ce vocable&thinsp;?",
         questionAnswer: 2,
         option1: "C’est la contraction de «Fun» et «Tunnel»",
         option2: "C’est le mot anglais pour « entonnoir »",
         option3: "C’est un néologisme crée par Google",
         answered: false,
-        comment: "Pourquoi chercher la complication ? Funnel est tout simplement le mot anglais pour “entonnoir”.",
+        comment: "Pourquoi chercher la complication&thinsp;? Funnel est tout simplement le mot anglais pour 'entonnoir'.",
         correct: false
     },{
         questionNumber: 9,
@@ -87,41 +87,41 @@ export const quizFr = [
         option2: "est resté stable",
         option3: "a diminué de 38%",
         answered: false,
-        comment: "Avec un score de seulement 19% en 2017, Facebook affiche une perte de crédibilité de 38% en 5 ans. La radio conserve le plus haut indice de confiance, avec 69,4 %.  Les publicités sont à moins de 10% de crédibilité, à égalité avec les partis politiques. <span>(Source: Whyte corporate affairs)</span>",
+        comment: "Avec un score de seulement 19% en 2017, Facebook affiche une perte de crédibilité de 38&thinsp;% en 5 ans. La radio conserve le plus haut indice de confiance, avec 69,4&thinsp;%.  Les publicités sont à moins de 10&thinsp;% de crédibilité, à égalité avec les partis politiques.<br/><span class='source'>(Source: Whyte corporate affairs)</span>",
         correct: false
     },{
         questionNumber: 10,
-        questionContent: "Qu’appelle-t-on la génération Alpha ? ",
+        questionContent: "Qu’appelle-t-on la génération Alpha&thinsp;?",
         questionAnswer: 2,
         option1: "La première génération d’enfants nés en dehors de la Terre",
         option2: "Les enfants nés après 2010, qui ont toujours connu un monde connecté",
         option3: "La génération de supercalculateurs qui surpassera l’intelligence humaine",
         answered: false,
-        comment: "Même si c’est pour bientôt, personne n’est encore né en dehors de notre bonne vielle Terre&hellip; La génération alpha désigne les personnes nées après 2005. ",
+        comment: "Même si c’est pour bientôt, personne n’est encore né en dehors de notre bonne vielle Terre&hellip; La génération alpha désigne les personnes nées après 2005.",
         correct: false
     },{
         questionNumber: 11, 
-        questionContent: "Dans le jargon « tendance », on parle de plus en plus de « native advertising ». Que signifie cette expression ?",
+        questionContent: "Dans le jargon «&thinsp;tendance&thinsp;», on parle de plus en plus de «&thinsp;native advertising&thinsp;». Que signifie cette expression&thinsp;?",
         questionAnswer: 3,
         option1: "La publicité adaptée aux origines et à la culture de sa cible",
         option2: "La publicité qui joue sur l’inné, le naturel, l’authenticité",
         option3: "Le publi-rédactionnel",
         answered: false,
-        comment: "Le native advertising désigne essentiellement le bon vieux publi-rédactionnel : de la publicité qui se déguise en article, pour se fondre dans le contexte journalistique du média où elle s’insère. A défaut d’avoir de nouvelles idées, on renomme les anciennes&hellip;",
+        comment: "Le native advertising désigne essentiellement le bon vieux publi-rédactionnel&thinsp;: de la publicité qui se déguise en article, pour se fondre dans le contexte journalistique du média où elle s’insère. A défaut d’avoir de nouvelles idées, on renomme les anciennes&hellip;",
         correct: false
     },{
         questionNumber: 12,
-        questionContent: "En 2012, Facebook a racheté Instagram pour un milliard de dollars. Combien d’employés comptait Instagram à ce moment ? ",
+        questionContent: "En 2012, Facebook a racheté Instagram pour un milliard de dollars. Combien d’employés comptait Instagram à ce moment&thinsp;?",
         questionAnswer: 1,
         option1: "13",
         option2: "130",
         option3: "1300",
         answered: false,
-        comment: "Au moment de son rachat par Facebook, Instagram ne comptait que 13 employés. Quelle start-up ne rêverait pas d’une telle aubaine ?",
+        comment: "Au moment de son rachat par Facebook, Instagram ne comptait que 13 employés. Quelle start-up ne rêverait pas d’une telle aubaine&thinsp;?",
         correct: false
     },{
         questionNumber: 13,
-        questionContent: "Dans son roman “2001, l’Odyssée de l’espace“, paru en 1968, Arthur C. Clarke décrit une machine correspondant en tous points aux tablettes actuelles. Comment avait-il appelé l’appareil ? ",
+        questionContent: "Dans son roman “2001, l’Odyssée de l’espace“, paru en 1968, Arthur C. Clarke décrit une machine correspondant en tous points aux tablettes actuelles. Comment avait-il appelé l’appareil&thinsp;?",
         questionAnswer: 2,
         option1: "Le fax",
         option2: "Le télégramme",
@@ -131,7 +131,7 @@ export const quizFr = [
         correct: false
     },{
         questionNumber: 14,
-        questionContent: "Le 25 mai 2018, quelle mesure sera mise en pratique, avec d’importantes répercussions sur la communication et le commerce ?",
+        questionContent: "Le 25 mai 2018, quelle mesure sera mise en pratique, avec d’importantes répercussions sur la communication et le commerce&thinsp;?",
         questionAnswer: 2,
         option1: "Le fax",
         option2: "Le télégramme",
@@ -141,7 +141,7 @@ export const quizFr = [
         correct: false
     },{
         questionNumber: 15,
-        questionContent: "En 2018, la célèbre agence de communication Concerto fêtera ses :",
+        questionContent: "En 2018, la célèbre agence de communication Concerto fêtera ses&thinsp;:",
         questionAnswer: 2,
         option1: "Le fax",
         option2: "Le télégramme",

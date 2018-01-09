@@ -6,8 +6,6 @@
 
 html {
     font-size: 62.5%;
-    min-width: 100vh;
-    min-height: 100vh;
 }
 
 body {
@@ -17,5 +15,14 @@ body {
 }
 
 .wrapper {
-    width: 100vw;
+    width: 100%;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.source {
+    font-size: 80%;
+    font-style: italic;
 }

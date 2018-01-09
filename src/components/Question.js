@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import ReactHtmlParser from 'react-html-parser';
 import { setScore } from '../actions/score';
 import { nextQuestion } from '../actions/questions';
 import { setAnswered, setStatus } from '../actions/quizFr';
@@ -7,17 +8,24 @@ import { setAnswered, setStatus } from '../actions/quizFr';
 class Question extends React.Component{
     
     setScore = (e) => {
-        const selectedAnswer = parseInt(e.target.value, 10);
+        let selectedAnswer = 0;
+        if (e.target.matches('img')) {
+            selectedAnswer = parseInt(e.target.parentNode.value, 10);
+        } else {
+            selectedAnswer = parseInt(e.target.value, 10);
+        }
         const correctAnswer = this.props.answer;
         if (selectedAnswer === correctAnswer) {
             this.props.setScore();
             this.props.setStatus(this.props.number);
         }
         this.props.setAnswered(this.props.number);
+        window.scrollTo(0, 0);
     }
 
     nextQuestion = () => {
         this.props.nextQuestion();
+        window.scrollTo(0, 0);
     }
 
     render(){
@@ -35,15 +43,40 @@ class Question extends React.Component{
                             :
                             <h2 className="question__answered question__wrong">Faux !</h2>
                         }
-                        <p className="question__comment">{props.comment}</p>
+                        <p className="question__comment">{ReactHtmlParser(props.comment)}</p>
+                        {props.number === 15 ?
+                        <button className="btn">Résultat</button> //forward to results page -TO ADD!!
+                        : 
                         <button className="btn" onClick={this.nextQuestion}>Question suivante</button>
+                        }
                     </div>)
                     :
                     (<div className="question__unanswered">
-                        <h2 className="question__content">{props.content}</h2>
-                        <button className="btn question__btn" value="1" onClick={this.setScore}>{props.option1}</button>
-                        <button className="btn question__btn" value="2" onClick={this.setScore}>{props.option2}</button>
-                        <button className="btn question__btn" value="3" onClick={this.setScore}>{props.option3}</button>
+                        <h2 className="question__content">{ReactHtmlParser(props.content)}</h2>
+                        <button
+                            className={
+                            `btn question__btn ${props.option1.includes('img') && 'question__btn--large'}`
+                            }
+                            value="1"
+                            onClick={this.setScore}>
+                                {ReactHtmlParser(props.option1)}
+                            </button>
+                        <button
+                        className={
+                            `btn question__btn ${props.option2.includes('img') && 'question__btn--large'}`
+                            }
+                            value="2"
+                            onClick={this.setScore}>
+                                {ReactHtmlParser(props.option2)}
+                        </button>
+                        <button
+                        className={
+                            `btn question__btn ${props.option3.includes('img') && 'question__btn--large'}`
+                            }
+                            value="3"
+                            onClick={this.setScore}>
+                                {ReactHtmlParser(props.option3)}
+                        </button>
                     </div>)
                 }
             </div>

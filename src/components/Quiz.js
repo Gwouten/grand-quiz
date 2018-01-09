@@ -4,10 +4,7 @@ import Question from './Question';
 import { Link } from 'react-router-dom';
 
 const Quiz = (props) => (
-  <div className="wrapper">
-    
-    <p className="score">Score: {props.score}</p>
-    
+  <div className="wrapper">   
     <div className={`question__wrapper question${props.question}`}>
       <div className="logo__wrapper">
         <img className="quiz-logo" src="img/GrandQuizz2018_logo_fr.svg" alt="Grand Quiz 2018" />
@@ -30,6 +27,7 @@ const Quiz = (props) => (
           )
         }
       </div>
+      <div className="score">{props.question} / 15</div>
      </div>
       <Link className="btn btn__result" to="/Result">Result</Link>
   </div>
