@@ -1,15 +1,12 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import Question from './Question';
 import { Link } from 'react-router-dom';
+import Question from './Question';
+import Header from './Header';
 
 const Quiz = (props) => (
-  <div className="wrapper">   
-    <div className={`question__wrapper question${props.question}`}>
-      <div className="logo__wrapper">
-        <img className="quiz-logo" src="img/GrandQuizz2018_logo_fr.svg" alt="Grand Quiz 2018" />
-        <img className="concerto-logo" src="img/concerto.svg" alt="Grand Quiz 2018" />
-      </div>
+  <div className={`wrapper question${props.question}`}>   
+      <Header />
       <div className="question__slider">
         {
           props.quizFr.map((question) => 
@@ -28,7 +25,6 @@ const Quiz = (props) => (
         }
       </div>
       <div className="score">{props.question} / 15</div>
-     </div>
       <Link className="btn btn__result" to="/Result">Result</Link>
   </div>
 )

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import ReactHtmlParser from 'react-html-parser';
 import { setScore } from '../actions/score';
@@ -45,7 +46,7 @@ class Question extends React.Component{
                         }
                         <p className="question__comment">{ReactHtmlParser(props.comment)}</p>
                         {props.number === 15 ?
-                        <button className="btn">Résultat</button> //forward to results page -TO ADD!!
+                        <Link className="btn" to="/Result">Résultat</Link>
                         : 
                         <button className="btn" onClick={this.nextQuestion}>Question suivante</button>
                         }

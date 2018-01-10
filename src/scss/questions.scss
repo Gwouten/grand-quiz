@@ -1,8 +1,8 @@
-.question1, .question5, .question9, .question13 {
+.question1, .question5, .question9, .question13, .good {
     @extend %grad-blue-purple;
 }
 
-.question2, .question6, .question10, .question14 {
+.question2, .question6, .question10, .question14, .bad {
     @extend %grad-red-orange;
 }
 
@@ -10,7 +10,7 @@
     @extend %grad-yellow-orange;
 }
 
-.question4, .question8, .question12 {
+.question4, .question8, .question12, .medium {
     @extend %grad-white-blue;
 }
 
@@ -90,7 +90,11 @@
     font-size: 1.5rem;
     height: 6rem;
     margin: 3rem auto 0;
-    padding: 1.8rem 0;
+    padding: 1.9rem 0;
     width: 6rem;
     border-radius: 10rem;
+}
+.score--result {
+    transform: scale(1.5);
+    margin: 6rem auto 4rem;
 }

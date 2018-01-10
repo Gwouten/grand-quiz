@@ -6,13 +6,10 @@ import store from './store';
 import App from './components/App';
 
 import './styles.scss';
-import createBrowserHistory from 'history/createBrowserHistory';
-
-const history = createBrowserHistory();
 
 const jsx =
  <Provider store={store}>
-    <BrowserRouter history={history}>
+    <BrowserRouter>
       <App />
     </BrowserRouter>
 </Provider>

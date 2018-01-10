@@ -15,7 +15,24 @@
 .concerto-logo {
     @extend %logo;
 }
+.concerto-logo--start {
+    display: block;
+    width: 8rem;
+    margin: 0 auto;
+}
 
 .quiz-logo {
     @extend %logo;
+}
+.quiz-logo--start {
+    display: block;
+    width: 70%;
+    margin: 4rem 16% 4rem 14%;
+}
+
+.header__text {
+    margin-bottom: 2rem;
+}
+.header__text--result {
+    
 }

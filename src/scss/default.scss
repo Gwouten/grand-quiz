@@ -12,10 +12,15 @@ body {
     box-sizing: border-box;
     font-family: 'Khula', sans-serif;
     line-height: 1.5;
+    color: $white;
+    font-size: 1.8rem;
+    text-align: center;
 }
 
 .wrapper {
     width: 100%;
+    padding: 1rem 3rem;
+    min-height: 100vh;
 }
 
 .clearfix {
