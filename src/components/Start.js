@@ -7,9 +7,9 @@ class Start extends React.Component {
 
     componentWillMount() {
         if (window.location.host === 'concours.concerto.space') {
-            this.props.setLanguage('nl');
-        } else {
             this.props.setLanguage('fr');
+        } else {
+            this.props.setLanguage('nl');
         }
     }
 
