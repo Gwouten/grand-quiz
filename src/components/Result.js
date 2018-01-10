@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import FacebookShare from './FacebookShare';
 import Header from './Header';
 
 class Result extends React.Component {
@@ -38,6 +39,7 @@ class Result extends React.Component {
             <Header />
             <div className="score score--result">{this.props.score}/15</div>
             {this.props.score < 6 ? bad : this.props.score < 11 ? medium : good }
+            <FacebookShare />
         </div>
         )
     }
