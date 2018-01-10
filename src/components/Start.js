@@ -1,10 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
+import { setLanguage } from '../actions/language';
 
 class Start extends React.Component {
 
     componentWillMount() {
         console.log(window.location.host);
+        if (window.location.host === 'localhost:3000') {
+            console.log('Host')
+            this.props.setLanguage('fr');
+        } else {
+            this.props.setLanguage('nl');
+        }
     }
 
 
@@ -23,4 +31,12 @@ class Start extends React.Component {
 }
 }
 
-export default Start
+const mapStateToProps = (state) => ({
+    language: state.lang 
+})
+
+const mapDispatchToProps = (dispatch) => ({
+    setLanguage: (lang) => dispatch(setLanguage(lang))
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(Start)

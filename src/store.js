@@ -5,6 +5,7 @@ import createHistory from 'history/createBrowserHistory';
 import quizFrReducer from './reducers/quizFrReducer';
 import scoreReducer from './reducers/scoreReducer';
 import questionReducer from './reducers/questionReducer';
+import languageReducer from './reducers/languageReducer';
 
 export const history = createHistory();
 
@@ -32,7 +33,8 @@ const store = createStore(
   combineReducers({
     quizFr: quizFrReducer,
     score: scoreReducer,
-    question: questionReducer
+    question: questionReducer,
+    lang: languageReducer
   }),
   initialState,
   composedEnhancers
