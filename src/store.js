@@ -3,6 +3,7 @@ import { routerMiddleware } from 'react-router-redux';
 import thunk from 'redux-thunk';
 import createHistory from 'history/createBrowserHistory';
 import quizFrReducer from './reducers/quizFrReducer';
+import quizNlReducer from './reducers/quizNlReducer';
 import scoreReducer from './reducers/scoreReducer';
 import questionReducer from './reducers/questionReducer';
 import languageReducer from './reducers/languageReducer';
@@ -32,6 +33,7 @@ const composedEnhancers = compose(
 const store = createStore(
   combineReducers({
     quizFr: quizFrReducer,
+    quizNl: quizNlReducer,
     score: scoreReducer,
     question: questionReducer,
     lang: languageReducer

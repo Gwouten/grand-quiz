@@ -6,10 +6,10 @@ import { setLanguage } from '../actions/language';
 class Start extends React.Component {
 
     componentWillMount() {
-        if (window.location.host === 'localhost:3000') {
-            this.props.setLanguage('fr');
-        } else {
+        if (window.location.host === 'concours.concerto.space') {
             this.props.setLanguage('nl');
+        } else {
+            this.props.setLanguage('fr');
         }
     }
 
@@ -29,8 +29,8 @@ class Start extends React.Component {
 
     const introNl = (
         <div className="wrapper start">
-        <img className="concerto-logo concerto-logo--start" src="img/concerto.svg" alt="Grand Quiz 2018" />
-        <img className="quiz-logo quiz-logo--start" src="img/GrandQuizz2018_logo_fr.svg" alt="Grand Quiz 2018" />
+        <img className="concerto-logo concerto-logo--start" src="img/concerto.svg" alt="Grote Quiz 2018" />
+        <img className="quiz-logo quiz-logo--start" src="img/GrandQuizz2018_logo_nl.svg" alt="Grote Quiz 2018" />
         <h1 className="question__content header__text">Bent u de ‘communicatiespecialist’ van 2018?</h1>
         <p>Om u onze wensen over te maken, bieden wij u dit jaar graag een spelletje aan, kwestie van het nieuwe jaar op een leuke en leerrijke manier te starten&hellip;</p>
         <p>Maar opgelet, deze quiz werd niet zomaar opgesteld! Hij zal precies het niveau kunnen bepalen van uw ‘communicatie-expertise’. De 15 vragen werden wetenschappelijk uitgewerkt op basis van algoritmen waarbij een beroep wordt gedaan op machine learning, neural network en big data. De grote quiz 2018 gaat over heel uiteenlopende onderwerpen, en heeft dus een heel hoge voorspellende waarde.</p>

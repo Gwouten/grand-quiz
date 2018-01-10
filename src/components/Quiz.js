@@ -9,7 +9,7 @@ const Quiz = (props) => (
       <Header />
       <div className="question__slider">
         {
-          props.quizFr.map((question) => 
+          props.quiz.map((question) => 
             (<Question
               key={question.questionNumber}
               number={question.questionNumber}
@@ -29,7 +29,7 @@ const Quiz = (props) => (
   </div>
 )
 const mapStateToProps = (state) => ({
-  quizFr: state.quizFr,
+  quiz: state.lang === 'fr' ? state.quizFr : state.quizNl,
   score: state.score,
   question: state.question
 })

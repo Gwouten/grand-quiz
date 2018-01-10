@@ -31,6 +31,7 @@ class Question extends React.Component{
 
     render(){
         const props = this.props;
+        const lang = this.props.lang === 'fr';
         return (
             <div className={`question__slide ${props.question === props.number && 'question__slide--active'}`}>
                 {
@@ -40,15 +41,15 @@ class Question extends React.Component{
                         {
                             props.correct
                             ?
-                            <h2 className="question__answered question__correct">Bravo !</h2>
+                            <h2 className="question__answered question__correct">{lang ? 'Bravo !' : 'Correct!'}</h2>
                             :
-                            <h2 className="question__answered question__wrong">Faux !</h2>
+                            <h2 className="question__answered question__wrong">{lang ? 'Faux !' : 'Fout!'}</h2>
                         }
                         <p className="question__comment">{ReactHtmlParser(props.comment)}</p>
                         {props.number === 15 ?
                         <Link className="btn" to="/Result">Résultat</Link>
                         : 
-                        <button className="btn" onClick={this.nextQuestion}>Question suivante</button>
+                        <button className="btn" onClick={this.nextQuestion}>{lang ? 'Question suivante' : 'Volgende vraag'}</button>
                         }
                     </div>)
                     :
@@ -87,7 +88,8 @@ class Question extends React.Component{
 
 const mapStateToProps = (state, props) => ({
     correct: state.quizFr[props.number-1].correct,
-    question: state.question
+    question: state.question,
+    lang: state.lang
 });
 
 const mapDispatchToProps = (dispatch) => ({
