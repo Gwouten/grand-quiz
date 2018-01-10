@@ -17,7 +17,7 @@ export const quizNl = [
         option2: "Schattenjacht in het ‘Tahitiaans’",
         option3: "‘Zoeken’ in het Aramees",
         answered: false,
-        comment: "Google is een fonetische vervorming van ‘googol’ (gogol in het Frans), dat staat voor het getal 10 exponent 100, of 1 gevolgd door 100 nullen. Een googolplex staat voor 10 tot de macht googol: een cijfer dat zo groot is dat het onmogelijk zou zijn om het te schrijven omdat het meer cijfers bevat dan er atomen zijn in het universum. Maar misschien hebt u de vraag wel gegoogeld?",
+        comment: "Google is een fonetische vervorming van ‘googol’, dat staat voor het getal 10 exponent 100, of 1 gevolgd door 100 nullen. Een googolplex staat voor 10 tot de macht googol: een cijfer dat zo groot is dat het onmogelijk zou zijn om het te schrijven omdat het meer cijfers bevat dan er atomen zijn in het universum. Maar misschien hebt u de vraag wel gegoogeld?",
         correct: false
     },{
         questionNumber: 3,

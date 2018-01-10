@@ -1,3 +1,9 @@
 .start {
     @extend %grad-white-blue;
 }
+
+.start {
+    p {
+        margin: 2rem 0;
+    }
+}
