@@ -8,9 +8,10 @@ class Start extends React.Component {
     componentWillMount() {
         console.log(window.location.host);
         if (window.location.host === 'localhost:3000') {
-            console.log('Host')
+            console.log('localhost')
             this.props.setLanguage('fr');
         } else {
+            console.log('Heroku');
             this.props.setLanguage('nl');
         }
     }
