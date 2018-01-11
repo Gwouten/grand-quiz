@@ -33,7 +33,7 @@ class Start extends React.Component {
         <img className="quiz-logo quiz-logo--start" src="img/GrandQuizz2018_logo_nl.svg" alt="Grote Quiz 2018" />
         <h1 className="question__content header__text">Bent u de ‘communicatiespecialist’ van 2018?</h1>
         <p>Om u onze wensen over te maken, bieden wij u dit jaar graag een spelletje aan, kwestie van het nieuwe jaar op een leuke en leerrijke manier te starten&hellip;</p>
-        <p>Maar opgelet, deze quiz werd niet zomaar opgesteld! Hij zal precies het niveau kunnen bepalen van uw ‘communicatie-expertise’. De 15 vragen werden wetenschappelijk uitgewerkt op basis van algoritmen waarbij een beroep wordt gedaan op machine learning, neural network en big data. De grote quiz 2018 gaat over heel uiteenlopende onderwerpen, en heeft dus een heel hoge voorspellende waarde.</p>
+        <p>Maar opgelet, deze quiz werd niet zomaar opgesteld! Hij zal precies het niveau kunnen bepalen van uw ‘communicatie-expertise’. De 15 vragen werden wetenschappelijk uitgewerkt op basis van algoritmen waarbij een beroep wordt gedaan op machine learning, neural network en big data. De grote quizz 2018 gaat over heel uiteenlopende onderwerpen, en heeft dus een heel hoge voorspellende waarde.</p>
         <p>Klaar om de uitdaging aan te gaan? Concerto wenst u veel geluk… en welke uw score ook moge zijn, een fantastisch 2018 toegewenst!</p>
         <Link className="btn" to="/Quiz">Speel!</Link>
     </div>

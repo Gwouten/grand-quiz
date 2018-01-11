@@ -7,7 +7,6 @@ import Header from './Header';
 class Quiz extends React.Component{
 
   componentWillMount() {
-    console.log('scrollToTop');
     window.scrollTo(0, 0);
   }
 
@@ -31,8 +30,8 @@ class Quiz extends React.Component{
                 />)
               )
             }
-          </div>
           <div className="score">{this.props.question} / 15</div>
+          </div>
           <Link className="btn btn__result" to="/Result">Result</Link>
       </div>
     );

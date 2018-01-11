@@ -1,3 +1,12 @@
 .bad p, .medium p, .good p {
     margin: 2rem 0;
 }
+
+.result__wrapper {
+    @include medium {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}

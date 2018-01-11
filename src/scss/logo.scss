@@ -14,6 +14,12 @@
 
 .concerto-logo {
     @extend %logo;
+    @include medium {
+        bottom: 4rem;
+        height: 7rem;
+        position: fixed;
+        right: 5rem;
+    }
 }
 .concerto-logo--start {
     display: block;
@@ -23,11 +29,22 @@
 
 .quiz-logo {
     @extend %logo;
+    @include medium {
+        height: 12rem;
+        max-width: 40rem;
+        margin: 4rem auto;
+        position: fixed;
+    }
 }
 .quiz-logo--start {
     display: block;
     width: 70%;
     margin: 4rem 16% 4rem 14%;
+    @include medium {
+        max-width: 40rem;
+        margin: 4rem auto;
+        position: relative;
+    }
 }
 
 .header__text {

@@ -11,13 +11,13 @@ export const quizFr = [
         correct: false
     },{
         questionNumber: 2,
-        questionContent: "Google est tellement dominant que le verbe « googler » est devenu une expression usuelle. Connaissez-vous l’origine du mot Google&thinsp;?",
+        questionContent: "Google est tellement dominant que le verbe «&thinsp;googler&thinsp;» est devenu une expression usuelle. Connaissez-vous l’origine du mot Google&thinsp;?",
         questionAnswer: 1,
         option1: "10 à la puissance  100",
-        option2: "« chasse au trésor » en tahitien",
-        option3: "« chercher » en araméen",
+        option2: "«&thinsp;chasse au trésor&thinsp;» en tahitien",
+        option3: "«&thinsp;chercher&thinsp;» en araméen",
         answered: false,
-        comment: "Google est une déformation phonétique de « googol » (gogol en français), qui désigne le nombre 10 exposant 100, soit 1 suivi de 100 zéros. Un gogolplex égale 10 à la puissance gogol: un nombre si grand qu’il serait impossible de l’écrire, car il contient plus de chiffres qu’il n’y a d’atomes dans l’univers. Mais peut-être avez-vous googlé la question&thinsp;?",
+        comment: "Google est une déformation phonétique de «&thinsp;googol&thinsp;» (gogol en français), qui désigne le nombre 10 exposant 100, soit 1 suivi de 100 zéros. Un gogolplex égale 10 à la puissance gogol: un nombre si grand qu’il serait impossible de l’écrire, car il contient plus de chiffres qu’il n’y a d’atomes dans l’univers. Mais peut-être avez-vous googlé la question&thinsp;?",
         correct: false
     },{
         questionNumber: 3,
@@ -57,12 +57,12 @@ export const quizFr = [
         option2: "Global Return Performance",
         option3: "Global Reach Peak",
         answered: false,
-        comment: "Le GRP est l’acronyme de « Gross Rating Point » (point de couverture brute). Il correspond au nombre moyen de contacts publicitaires obtenus sur 100 individus de la cible visée. GRP = (couverture en %) x (répétition moyenne).",
+        comment: "Le GRP est l’acronyme de «&thinsp;Gross Rating Point&thinsp;» (point de couverture brute). Il correspond au nombre moyen de contacts publicitaires obtenus sur 100 individus de la cible visée. GRP = (couverture en %) x (répétition moyenne).",
         correct: false
     },{
         questionNumber: 7,
         questionContent: "Le mot “ordinateur” a été créé en 1955 à la demande d’IBM pour définir ses nouveaux produits. Plusieurs autres noms furent envisagés. Laquelle des propositions suivantes n’a PAS été soumise&thinsp;?",
-        questionAnswer: 1,
+        questionAnswer: 3,
         option1: "Ordinatrice",
         option2: "Systémateur",
         option3: "Calculateur",
@@ -73,8 +73,8 @@ export const quizFr = [
         questionNumber: 8,
         questionContent: "On parle beaucoup du concept de 'funnel' pour évoquer les parcours d’achat sur internet. D’où vient ce vocable&thinsp;?",
         questionAnswer: 2,
-        option1: "C’est la contraction de «Fun» et «Tunnel»",
-        option2: "C’est le mot anglais pour « entonnoir »",
+        option1: "C’est la contraction de «&thinsp;Fun&thinsp;» et «&thinsp;Tunnel&thinsp;»",
+        option2: "C’est le mot anglais pour «&thinsp;entonnoir&thinsp;»",
         option3: "C’est un néologisme crée par Google",
         answered: false,
         comment: "Pourquoi chercher la complication&thinsp;? Funnel est tout simplement le mot anglais pour 'entonnoir'.",

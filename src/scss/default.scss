@@ -6,6 +6,9 @@
 
 html {
     font-size: 62.5%;
+    @include medium {
+        font-size: 75%;
+    }
 }
 
 body {
@@ -19,8 +22,11 @@ body {
 
 .wrapper {
     width: 100%;
-    padding: 1rem 3rem;
+    padding: 1rem 3rem 3rem 3rem;
     min-height: 100vh;
+    @include medium{
+        position: relative;
+    }
 }
 
 .clearfix {

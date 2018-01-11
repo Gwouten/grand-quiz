@@ -61,7 +61,7 @@ export const quizNl = [
         correct: false
     },{
         questionNumber: 7,
-        questionContent: "Het woord ‘computer’ werd gecreëerd in 1955 op vraag van IBM om zijn nieuwe producten te definiëren. Er werden ook verschillende andere namen overwogen. Welke van de volgende voorstellen werd NIET voorgelegd?",
+        questionContent: "Het Franse woord ‘ordinateur’ werd gecreëerd in 1955 op vraag van IBM om zijn nieuwe producten te definiëren. Er werden ook verschillende andere namen overwogen. Welke van de volgende voorstellen werd NIET voorgelegd?",
         questionAnswer: 3,
         option1: "Ordinatrice",
         option2: "Systémateur",

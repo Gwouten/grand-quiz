@@ -57,7 +57,7 @@ class Result extends React.Component {
                 <h2 className="question__content header__text header__text--result">Cijfers liegen niet: u behoort tot de elite.</h2>
                     <p>De technologie en de wereld van de communicatie hebben voor u geen geheimen meer!</p>
                     <p>Uw kennis plaatst u boven de massa. En zoals iedere gecultiveerde persoon etaleert u die kennis ook niet: tot nu toe dacht u er niet aan om uw resultaat te delen ( maar nu men u dit suggereert, kunt u dit ook doen).</p>
-                    <p>Maar opgelet, het is soms niet gemakkelijk om bij de besten te behoren. U kunt wellicht het syndroom van de beste van de klas: jaloezie, onbegrip … Blijf niet bij de pakken zitten.</p>
+                    <p>Maar opgelet, het is soms niet gemakkelijk om bij de besten te behoren. U kunt wellicht het syndroom van de beste van de klas: jaloezie, onbegrip&hellip; Blijf niet bij de pakken zitten.</p>
                     <p>Bel ons, samen zijn we sterker.</p>
             </div>
             );
@@ -66,9 +66,11 @@ class Result extends React.Component {
         return (
         <div className={`wrapper ${this.props.score < 6 ? 'bad' : this.props.score < 11 ? 'medium' : 'good'}`}>
             <Header />
-            <div className="score score--result">{this.props.score}/15</div>
-            {this.props.score < 6 ? (lang ? badFr : badNl) : (this.props.score < 11 ? (lang ? mediumFr : mediumNl) : (lang ? goodFr : goodNl)) }
-            <FacebookShare />
+            <div className="result__wrapper">
+                <div className="score score--result">{this.props.score}/15</div>
+                {this.props.score < 6 ? (lang ? badFr : badNl) : (this.props.score < 11 ? (lang ? mediumFr : mediumNl) : (lang ? goodFr : goodNl)) }
+                <FacebookShare />
+            </div>
         </div>
         )
     }
