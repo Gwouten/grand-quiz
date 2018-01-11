@@ -5,7 +5,7 @@ class FacebookShare extends React.Component {
     render(){
         return (
             <FacebookProvider appId="1625426427527020">
-                <ShareButton href="" />
+                <ShareButton href="http://concours.concerto.space/" />
             </FacebookProvider>
         );
     }
