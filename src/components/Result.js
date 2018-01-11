@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import FacebookShare from './FacebookShare';
+import { shareResultToFacebook } from './FB';
 import Header from './Header';
 
 class Result extends React.Component {
@@ -69,7 +69,7 @@ class Result extends React.Component {
             <div className="result__wrapper">
                 <div className="score score--result">{this.props.score}/15</div>
                 {this.props.score < 6 ? (lang ? badFr : badNl) : (this.props.score < 11 ? (lang ? mediumFr : mediumNl) : (lang ? goodFr : goodNl)) }
-                <FacebookShare />
+                <a href={shareResultToFacebook(this.props.score, lang)}>Share</a>
             </div>
         </div>
         )
