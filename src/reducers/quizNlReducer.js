@@ -141,7 +141,7 @@ export const quizNl = [
         correct: false
     },{
         questionNumber: 15,
-        questionContent: "In 2018 viert het gekende communicatieagentschap zijn",
+        questionContent: "In 2018 viert het gekende communicatieagentschap Concerto zijn",
         questionAnswer: 2,
         option1: "16<sup>de</sup> verjaardag",
         option2: "26<sup>ste</sup> verjaardag",

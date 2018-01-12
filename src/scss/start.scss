@@ -1,9 +1,15 @@
 .start {
-    @extend %grad-white-blue;
+    @include medium {
+        max-width: 80rem;
+        margin: auto;
+    }
 }
 
 .start {
     p {
         margin: 2rem 0;
     }
+}
+.wrapper--start {
+    @extend %grad-white-blue;
 }

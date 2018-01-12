@@ -16,7 +16,7 @@ class Start extends React.Component {
 
     render(){
     const introFr = (
-        <div className="wrapper start">
+        <div className="start">
             <img className="concerto-logo concerto-logo--start" src="img/concerto.svg" alt="Grand Quiz 2018" />
             <img className="quiz-logo quiz-logo--start" src="img/GrandQuizz2018_logo_fr.svg" alt="Grand Quiz 2018" />
             <h1 className="question__content header__text">Êtes-vous le “communication expert“ de 2018 ?</h1>
@@ -28,7 +28,7 @@ class Start extends React.Component {
     );
 
     const introNl = (
-        <div className="wrapper start">
+        <div className="start">
         <img className="concerto-logo concerto-logo--start" src="img/concerto.svg" alt="Grote Quiz 2018" />
         <img className="quiz-logo quiz-logo--start" src="img/GrandQuizz2018_logo_nl.svg" alt="Grote Quiz 2018" />
         <h1 className="question__content header__text">Bent u de ‘communicatiespecialist’ van 2018?</h1>
@@ -40,7 +40,7 @@ class Start extends React.Component {
     );
 
     return (
-        <div>
+        <div className="wrapper wrapper--start">
             {this.props.language === 'fr' ? introFr : introNl}
         </div>
     );

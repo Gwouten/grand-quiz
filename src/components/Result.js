@@ -69,7 +69,6 @@ class Result extends React.Component {
             <div className="result__wrapper">
                 <div className="score score--result">{this.props.score}/15</div>
                 {this.props.score < 6 ? (lang ? badFr : badNl) : (this.props.score < 11 ? (lang ? mediumFr : mediumNl) : (lang ? goodFr : goodNl)) }
-                <a href={shareResultToFacebook(this.props.score, lang)} className="btn">Share on Facebook</a>
             </div>
         </div>
         )
