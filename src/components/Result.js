@@ -1,6 +1,5 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { shareResultToFacebook } from './FB';
 import Header from './Header';
 
 class Result extends React.Component {
