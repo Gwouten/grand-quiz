@@ -66,6 +66,7 @@
 
 .btn--play {
     background: $start;
+    max-width: $maxWidth/2;
 }
 .btn--next {
     max-width: $maxWidth/2;
