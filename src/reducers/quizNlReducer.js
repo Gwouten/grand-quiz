@@ -97,7 +97,7 @@ export const quizNl = [
         option2: "De kinderen geboren na 2010, die altijd in een geconnecteerde wereld hebben geleefd.",
         option3: "De generatie supercomputers die de menselijke intelligentie zal overstijgen.",
         answered: false,
-        comment: "Ook al is dat voor binnenkort, nog niemand is buiten onze goede, oude aarde geboren … De generatie alfa zijn de mensen die na 2005 zijn geboren.",
+        comment: "Ook al is dat voor binnenkort, nog niemand is buiten onze goede, oude aarde geboren&hellip; De generatie alfa zijn de mensen die na 2010 zijn geboren.",
         correct: false
     },{
         questionNumber: 11, 

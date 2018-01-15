@@ -63,11 +63,11 @@ class Result extends React.Component {
             const lang = this.props.lang === 'fr';
 
         return (
-        <div className={`wrapper ${this.props.score < 6 ? 'bad' : this.props.score < 11 ? 'medium' : 'good'}`}>
+        <div className={`wrapper ${this.props.score < 8 ? 'bad' : this.props.score < 13 ? 'medium' : 'good'}`}>
             <Header />
             <div className="result__wrapper">
                 <div className="score score--result">{this.props.score}/15</div>
-                {this.props.score < 6 ? (lang ? badFr : badNl) : (this.props.score < 11 ? (lang ? mediumFr : mediumNl) : (lang ? goodFr : goodNl)) }
+                {this.props.score < 8 ? (lang ? badFr : badNl) : (this.props.score < 13 ? (lang ? mediumFr : mediumNl) : (lang ? goodFr : goodNl)) }
             </div>
         </div>
         )
