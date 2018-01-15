@@ -58,7 +58,9 @@ class Question extends React.Component{
                     (<div className="question__unanswered">
                         <h2 className="question__content">{ReactHtmlParser(props.content)}</h2>
                         <div className="question__btn-group">
-                            <div className="btn btn__container" onClick={this.setScore}>
+                            <div 
+                            className={`btn btn__container ${(props.option1.includes('img') || props.number === 8 || props.number === 10 || props.number === 11) && 'btn__container--large'}`} 
+                            onClick={this.setScore}>
                                 <button
                                     className={
                                     `question__btn ${(props.option1.includes('img') || props.number === 8 || props.number === 10 || props.number === 11) && 'question__btn--large'}`
@@ -67,7 +69,9 @@ class Question extends React.Component{
                                         {ReactHtmlParser(props.option1)}
                                 </button>
                             </div>
-                            <div className="btn btn__container" onClick={this.setScore}>
+                            <div 
+                            className={`btn btn__container ${(props.option1.includes('img') || props.number === 8 || props.number === 10 || props.number === 11) && 'btn__container--large'}`} 
+                            onClick={this.setScore}>
                                 <button
                                 className={
                                     `question__btn ${(props.option2.includes('img') || props.number === 8 || props.number === 10 || props.number === 11) && 'question__btn--large'}`
@@ -77,7 +81,9 @@ class Question extends React.Component{
                                         {ReactHtmlParser(props.option2)}
                                 </button>
                             </div>
-                            <div className="btn btn__container" onClick={this.setScore}>
+                            <div 
+                            className={`btn btn__container ${(props.option1.includes('img') || props.number === 8 || props.number === 10 || props.number === 11) && 'btn__container--large'}`}
+                            onClick={this.setScore}>
                                 <button
                                 className={
                                     `question__btn ${(props.option3.includes('img') || props.number === 8 || props.number === 10 || props.number === 11) && 'question__btn--large'}`
