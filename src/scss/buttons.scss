@@ -5,22 +5,29 @@
     color: $white;
     display: block;
     font-size: 1.8rem;
-    margin: 3rem 0;
+    margin: 3rem auto;
+    max-width: $maxWidth;
     padding: .5rem 0;
     text-align: center;
     text-decoration: none;
     width: 100%;
+    -webkit-filter: drop-shadow(0 .5rem .5rem rgba(0, 0, 0, 0.582));
+    filter: drop-shadow(0 .5rem .5rem rgba(0, 0, 0, 0.582));
     transition: all .2s;
+    z-index: 9999;
     &:active {
+        -webkit-filter: drop-shadow(0 .5rem .5rem rgba(0, 0, 0, 0.582));
         filter: drop-shadow(0 .5rem .5rem rgba(0, 0, 0, 0.582));
-        transform: translateY(-.3rem)
+        transform: translate(-.3rem)
     }
     &:focus {
         outline: none;
     }
     &:hover {
         filter: drop-shadow(0 1rem .25rem rgba(0, 0, 0, 0.582));
-        transform: translateY(-.5rem);
+        @include medium {
+            transform: translate(0, -.5rem);
+        }
     }
     @include medium {
         margin: 3rem auto;
@@ -31,4 +38,25 @@
 
 .btn__result {
     display: none;
+}
+
+.btn__container {
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    -webkit-filter: drop-shadow(0 0 0 rgba(0, 0, 0, 0.582));
+    filter: drop-shadow(0 0 0 rgba(0, 0, 0, 0.582));
+    transition: all .2s;
+    @include medium {
+        padding: 7.5rem 0 0 0;
+        margin: 3rem 0;
+    }
+    &:hover {
+        -webkit-filter: drop-shadow(0 1rem 1rem rgba(0, 0, 0, 0.582));
+        filter: drop-shadow(0 1rem 1rem rgba(0, 0, 0, 0.582));
+        @include medium {
+            transform: translateX(0) translateY(-1rem);
+        }
+    }
 }

@@ -1,13 +1,14 @@
 .start {
     @include medium {
-        max-width: 80rem;
+        max-width: $maxWidth;
         margin: auto;
     }
 }
 
 .start {
     p {
-        margin: 2rem 0;
+        margin: 2rem auto;
+        max-width: $maxWidth;
     }
 }
 .wrapper--start {

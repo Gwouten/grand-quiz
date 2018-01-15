@@ -39,9 +39,9 @@
 .quiz-logo--start {
     display: block;
     width: 70%;
-    margin: 4rem 16% 4rem 14%;
+    margin: 4rem auto;
+    max-width: 40rem;
     @include medium {
-        max-width: 40rem;
         margin: 4rem auto;
         position: relative;
     }

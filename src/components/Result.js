@@ -17,7 +17,7 @@ class Result extends React.Component {
         <div>
             <h2 className="question__content header__text header__text--result">C’est bien. Vous avez plus que la moitié&hellip;</h2>
                 <p>A l’école, vous pourriez passer de classe. Vous n’êtes pas parmi les meilleurs, mais après tout ce n’est qu’un quizz, est-ce si important?</p>
-                <p>Et bien, oui c’est important&thinsp;! Nous vous connaissons, vous n’êtes pas du genre à vous contenter du moyen, du passable. Car il n’y pas pire : ni le talent d’être d’être parmi les premiers, ni l’anticonformisme de mener les derniers.</p>
+                <p>Et bien, oui c’est important&thinsp;! Nous vous connaissons, vous n’êtes pas du genre à vous contenter du moyen, du passable. Car il n’y pas pire : ni le talent d’être parmi les premiers, ni l’anticonformisme d’être parmi les derniers.</p>
                 <p>Point de fade, de tiède ou de mou, il vous faut de l’extrême, du panache!</p>
                 <p>Vous avez en vous le sens de l’excellence, le refus de la médiocrité, le besoin de dépassement. Ça tombe bien, nous aussi&thinsp;!  Et si nous nous rencontrions en 2018&thinsp;?</p>
         </div>
