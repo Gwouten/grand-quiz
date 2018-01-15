@@ -12,6 +12,8 @@ class Question extends React.Component{
         let selectedAnswer = 0;
         if (e.target.matches('img')) {
             selectedAnswer = parseInt(e.target.parentNode.value, 10);
+        } else if(e.target.matches('div')){
+            selectedAnswer = parseInt(e.target.children[0].value, 10);
         } else {
             selectedAnswer = parseInt(e.target.value, 10);
         }
@@ -47,43 +49,40 @@ class Question extends React.Component{
                         }
                         <p className="question__comment">{ReactHtmlParser(props.comment)}</p>
                         {props.number === 15 ?
-                        <Link className="btn" to="/Result">{lang ? 'Résultat' : 'Resultaat'}</Link>
+                        <Link className="btn btn--next" to="/Result">{lang ? 'Résultat' : 'Resultaat'}</Link>
                         : 
-                        <button className="btn" onClick={this.nextQuestion}>{lang ? 'Question suivante' : 'Volgende vraag'}</button>
+                        <button className="btn btn--next" onClick={this.nextQuestion}>{lang ? 'Question suivante' : 'Volgende vraag'}</button>
                         }
                     </div>)
                     :
                     (<div className="question__unanswered">
                         <h2 className="question__content">{ReactHtmlParser(props.content)}</h2>
                         <div className="question__btn-group">
-                            <div className="btn btn__container">
+                            <div className="btn btn__container" onClick={this.setScore}>
                                 <button
                                     className={
                                     `question__btn ${(props.option1.includes('img') || props.number === 8 || props.number === 10 || props.number === 11) && 'question__btn--large'}`
                                     }
-                                    value="1"
-                                    onClick={this.setScore}>
+                                    value="1">
                                         {ReactHtmlParser(props.option1)}
                                 </button>
                             </div>
-                            <div className="btn btn__container">
+                            <div className="btn btn__container" onClick={this.setScore}>
                                 <button
                                 className={
                                     `question__btn ${(props.option2.includes('img') || props.number === 8 || props.number === 10 || props.number === 11) && 'question__btn--large'}`
                                     }
-                                    value="2"
-                                    onClick={this.setScore}>
+                                    value="2">
                                         {ReactHtmlParser(props.option2img)}
                                         {ReactHtmlParser(props.option2)}
                                 </button>
                             </div>
-                            <div className="btn btn__container">
+                            <div className="btn btn__container" onClick={this.setScore}>
                                 <button
                                 className={
                                     `question__btn ${(props.option3.includes('img') || props.number === 8 || props.number === 10 || props.number === 11) && 'question__btn--large'}`
                                     }
-                                    value="3"
-                                    onClick={this.setScore}>
+                                    value="3">
                                         {ReactHtmlParser(props.option3img)}
                                         {ReactHtmlParser(props.option3)}
                                 </button>

@@ -10,15 +10,22 @@
     margin-bottom: 3rem;
     padding: 0 2rem;
     width: 100%;
+    a {
+        min-height: 9rem;
+        min-width: 9rem;
+        height: auto;
+        width: auto;
+    }
 }
 
 .concerto-logo {
     @extend %logo;
     @include medium {
-        bottom: 4rem;
-        height: 7rem;
+        top: 4rem;
+        height: auto;
         position: fixed;
-        right: 5rem;
+        right: 4rem;
+        width: 10rem;
     }
 }
 .concerto-logo--start {
@@ -32,8 +39,10 @@
     @include medium {
         height: 12rem;
         max-width: 40rem;
-        margin: 4rem auto;
+        margin: 0;
         position: fixed;
+        top: 4rem;
+        left: 4rem;
     }
 }
 .quiz-logo--start {

@@ -52,7 +52,7 @@
 .question__content {
     color: $white;
     font-size: 2rem;
-    font-weight: 600;
+    font-weight:700;
     width: 100%;
     @include medium {
         max-width: $maxWidth;
@@ -77,10 +77,10 @@
 .question__comment {
     color: $white;
     font-size: 2rem;
-    font-weight: 400;
-    margin-top: 2rem;
+    font-weight: 600;
+    margin: 2rem auto;
+    max-width: $maxWidth;
     @include medium {
-        max-width: $maxWidth;
         margin: 3rem auto 0;
     }
 }
@@ -101,6 +101,7 @@
     background-size: contain;
     border: none;
     border-radius: 0;
+    cursor: inherit;
     color: $black;
     font-size: 1.8rem;
     margin: 2rem auto 0;
