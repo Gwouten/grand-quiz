@@ -9,6 +9,11 @@ import { setAnswered, setStatus } from '../actions/quizFr';
 class Question extends React.Component{
     
     setScore = (e) => {
+        //Polyfill for .matches() 
+        if (!Element.prototype.matches){
+            Element.prototype.matches = Element.prototype.msMatchesSelector;
+        }
+
         let selectedAnswer = 0;
         if (e.target.matches('img')) {
             selectedAnswer = parseInt(e.target.parentNode.value, 10);
