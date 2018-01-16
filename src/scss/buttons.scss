@@ -70,6 +70,8 @@
 .btn--play {
     background: $start;
     max-width: $maxWidth/2;
+    text-transform: uppercase;
+    font-weight: 800;
 }
 .btn--next {
     max-width: $maxWidth/2;
